@@ -1,7 +1,7 @@
-// Author:        Andrew Enriquez
-// Net ID:        andrewenriquez@email.arizona.edu
-// Date:          10 - 15 - 2018
-// Assignment:    Lab 3
+/// Author:        Andrew Enriquez, 
+// Net ID:         andrewenriquez, 
+// Date:           10/24/2018
+// Assignment:     Lab 4
 //----------------------------------------------------------------------//
 
 #ifndef TIMER_H
@@ -9,7 +9,7 @@
 
 #include <avr/io.h>
 
-void initTimer1();
+void initTimer0();
 void delayUs(unsigned int delay);
 
 #endif

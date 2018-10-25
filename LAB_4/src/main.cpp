@@ -12,8 +12,8 @@
 
 #include <avr/io.h>
 #include "PWM.h"
-//#include "timer.h" //dont include this since we are using timer1 for PWM
-#include "PWM.h"
+#include "timer.h" 
+
 
 int main(){
 
