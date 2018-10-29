@@ -11,14 +11,19 @@
 //----------------------------------------------------------------------//
 
 #include <avr/io.h>
+#include <Arduino.h>
 #include "PWM.h"
 #include "timer.h" 
-
+#include "adc.h"
 
 int main(){
-
+initADC();
+Serial.begin(5600);
+unsigned int result=0;
   while(1){
-   //lets see this working
+   result=ADCL;
+   result+=((unsigned int)ADCH<<8);
+   Serial.println(result);
   }
 
   return 0;
